@@ -1,0 +1,53 @@
+* {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: #5614B0;
+  background: -webkit-linear-gradient(to left, #DBD65C, #5614B0);
+  background: linear-gradient(to left, #DBD65C, #5614B0);
+  height: 80px;
+  width: 100%;
+}
+
+header img {
+  height: 40px;
+  margin: 20px 40px;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.discos {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  margin: 20px;
+  width: 250px;
+  height: 250px;
+  background: #00ccff;
+}
+
+footer {
+  background: #5614B0;
+  background: -webkit-linear-gradient(to left, #DBD65C, #5614B0);
+  background: linear-gradient(to left, #DBD65C, #5614B0);
+  height: 80px;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  padding-top: 35px;
+}
