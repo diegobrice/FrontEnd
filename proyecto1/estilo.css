@@ -9,6 +9,8 @@ body {
   background: #141e30;
   background: -webkit-linear-gradient(to right, #243b55, #141e30);
   background: linear-gradient(to right, #243b55, #141e30);
+  color: white;
+  background: url(./img/bg_blue.png);
 }
 
 .header {
@@ -22,10 +24,6 @@ body {
 .header__img {
   height: 40px;
   margin: 20px 20px;
-}
-
-.header__menu {
-  /* margin-top: 20px; */
 }
 
 .header__menu--profile {
@@ -71,4 +69,78 @@ ul:hover {
 
 .header__menu ul li a:hover {
   color: yellow;
+}
+
+.main {
+  height: 350px;
+  text-align: center;
+}
+
+.main__title {
+  padding-top: 100px;
+  font-size: 28px;
+}
+
+.input {
+  margin-top: 10px;
+  background: transparent;
+  font-size: 18px;
+  border: 0;
+  border-bottom: 1px solid white;
+  width: 80%;
+  color: white;
+}
+
+.input:focus {
+  box-shadow: 0;
+  outline: 0px;
+}
+
+.music {
+  width: 100%;
+}
+
+.music h3 {
+  padding-left: 30px;
+  font-size: 22px;
+}
+
+.container__music {
+  padding: 30px 10px;
+  position: relative;
+  overflow: scroll;
+}
+
+.carousel__container {
+  white-space: nowrap;
+}
+
+.carousel__item {
+  width: 200px;
+  height: 200px;
+  margin: 0px 10px;
+  background-color: white;
+  border-radius: 20px;
+  display: inline-block;
+  /* overflow:hidden; */
+  cursor: pointer;
+  transition: 450ms;
+  transform-origin: center left;
+  background: url(./img/music/music_1.jpg);
+  background-size: cover;
+}
+.carousel__item:hover ~ .carousel__item {
+  transform: translate3d(50px, 0, 0);
+}
+
+.carousel__container:hover .carousel__item {
+  opacity: 0.6;
+}
+
+.carousel__container:hover .carousel__item:hover {
+  transform: scale(1.25);
+  opacity: 1;
+}
+
+.carousel__item:hover {
 }
