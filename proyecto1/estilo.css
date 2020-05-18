@@ -128,7 +128,6 @@ ul:hover {
   cursor: pointer;
   transition: 450ms;
   transform-origin: center left;
-  background-size: cover;
   position: relative;
 }
 
@@ -191,4 +190,57 @@ ul:hover {
 .carousel-item__details--subtitle {
   margin-left: 15px;
   line-height: 2px;
+}
+
+.footer {
+  margin: 0 auto;
+  display: flex;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  height: 60px;
+  max-width: 500px;
+  min-width: 300px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.footer a {
+  margin: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    height: 200px;
+  }
+
+  .main h2 {
+    padding-top: 50px;
+  }
+
+  .main__title {
+    font-size: 22px;
+  }
+
+  .music h3 {
+    font-size: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .footer a {
+    padding-bottom: 15px;
+    margin-top: 0;
+  }
 }
