@@ -188,6 +188,41 @@ ul:hover {
   margin: 15px;
 }
 
+.error {
+  height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.error h2 {
+  font-size: 120px;
+  line-height: 120px;
+  display: inline-flex;
+}
+
+.error p {
+  font-size: 30px;
+}
+
+.error .btn {
+  padding: 10px 30px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 @media only screen and (max-width: 500px) {
   .login__container {
     background-color: transparent;
@@ -202,6 +237,7 @@ ul:hover {
   }
 
   .footer a {
-    margin: 10px;
+    padding-bottom: 15px;
+    margin-top: 0;
   }
 }
