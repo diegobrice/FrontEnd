@@ -4,80 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diego Briceño</title>
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Fjalla+One&display"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./estilos.css" />
   </head>
   <body>
-    <header>
-      <img src="https://via.placeholder.com/150X50" alt="logo" />
-      <nav>
+    <header class="header">
+      <figure class="logo">
+        <img src="https://via.placeholder.com/150X50" alt="logo" />
+      </figure>
+      <nav class="menu">
         <ul>
-          <li>Perfil</li>
-          <li>Portafolio</li>
-          <li>Eventos</li>
-          <li>Contacto</li>
+          <li><a href="#perfil">Perfil</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="principal">
+    <section id="principal" class="hero">
       <h1>
-        Hola! mi nombre es Diego Briceño <br />
-        soy Desarrollador Web
+        Hola! mi nombre es Diego Briceño <br>
+        soy <strong>Desarrollador Frontend</strong><br>
+        y puedo ayudarte creando sitios web <br>
+        con <strong class="red">HTML</strong>, <strong>CSS</strong> y <strong>JS</strong>.
       </h1>
-      <img src="https://via.placeholder.com/450X250.jpg" alt="logo" />
     </section>
 
-    <section class="portafolio">
+    <div class="triangulo"></div>
+
+    <section id="portafolio" class="portfolio">
       <h2>Portafolio</h2>
-      <article>
-        <h3>Titulo de Proyecto</h3>
-        <h4>Javascript HTML</h4>
-        <p>
-          <small><strong>Fecha:</strong> Mayo 2020</small>
-        </p>
-        <p>
-          <small
-            ><strong>Link del proyecto:</strong><a href="">Proyecto</a></small
-          >
-        </p>
-        <p>
-          Descripcion del Proyecto: Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Eos voluptatum eligendi commodi veniam quia saepe
-          minima voluptates enim. Aspernatur maxime voluptatem necessitatibus
-          corporis ipsum expedita culpa eveniet officiis quisquam laboriosam?
-        </p>
+      <article class="project">
+        <div class="project_details">
+          <h3 class="project_title">Titulo de Proyecto</h3>
+          <h4 class="project_curse"">Javascript HTML</h4>
+          <p class="project_date">
+            <small><strong>Fecha:</strong> Mayo 2020</small>
+          </p>
+          <p class="project_url">
+            <small
+              ><strong>Link del proyecto:</strong><a href="">Proyecto</a></small
+            >
+          </p>
+          <p class="project_description">
+            Descripcion del Proyecto: Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Eos voluptatum eligendi commodi veniam quia saepe
+            minima voluptates enim. Aspernatur maxime voluptatem necessitatibus
+            corporis ipsum expedita culpa eveniet officiis quisquam laboriosam?
+          </p>
+        </div>
+        <figure class="project_image_wrapper">
+          <img class="project_image" src="https://via.placeholder.com/450X250.png" alt="" />
+        </figure>
       </article>
     </section>
 
-    <section class="eventos">
+    <section id="eventos" class="events">
       <h2>Eventos</h2>
-      <article>
-        <figure>
-          <img src="https://via.placeholder.com/450X250.png" alt="" />
+      <article class="event">
+        <figure class="event_image_wrapper">
+          <img class="event_image" src="https://via.placeholder.com/450X250.png" alt="" />
         </figure>
-        <h3>Titulo del evento</h3>
-        <p>
+        <h3 class="event_title">Titulo del evento</h3>
+        <p class="event_description">
           Descripcion del Proyecto: Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Eos voluptatum eligendi commodi veniam quia saepe
           minima voluptates enim. Aspernatur maxime voluptatem necessitatibus
           corporis ipsum expedita culpa eveniet officiis quisquam laboriosam?
         </p>
-        <p>
+        <p class="event_url">
           <small><strong>Link del evento:</strong><a href="">Evento</a></small>
         </p>
       </article>
     </section>
 
-    <section class="contacto">
-      <h2>Contacto</h2>
+    <section id="contacto" class="contact">
+      <form action="" class="form_email">
+        <h2>Contacto</h2>
+        <input type="text" name="" id="" placeholder="Indicanos tu email" />
+        <input type="submit" value="Enviar" />
+      </form>
     </section>
 
-    <footer>
-      Datos de contacto
+    <footer class="footer">
+      <div>Derechos reservados 2020 </div>
+      <div>Correo: diegobricep@gmail.com</div>
+      <div>@diegobrice</div>
     </footer>
   </body>
 </html>
