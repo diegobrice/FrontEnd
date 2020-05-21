@@ -12,45 +12,105 @@ body
 li
   list-style: none
 
+.flex_center
+  display: flex
+  justify-content: center
+
 .header
   color: rgb(34,34,34)
   font-size: 13px
   padding-right: 20px
 
-  ul
+  .nav_items
     display: flex
     justify-content: flex-end
     align-items: center
 
-  li
+  .nav_link
     line-height: 60px
     margin: 0 7.5px
 
-  .imagen
+  .icono
     display: block
-    background-position: center
-    background-repeat: no-repeat
-
-  .user
-    @extend .imagen
-    border-radius: 50%
     width: 32px
     height: 32px
-    background-image: url(./user.png)
+
+  .user
+    @extend .icono
+    border-radius: 50%
+    background: url(./user.png) center no-repeat
 
   .menu
-    @extend .imagen
-    width: 36px
-    height: 36px
-    background-image: url(./menu.png)
+    @extend .icono
+    background: url(./menu.png) center no-repeat
     background-size: 18px 18px
     filter: invert(0.5)
 
 .main
   flex: 1
-  display: flex
-  justify-content: center
+  @extend .flex_center
   align-items: center
+
+  .main_container
+    @extend .flex_center
+    flex-direction: column
+    align-items: center
+    margin-top: -110px
+
+  .main_input
+    margin: 20px
+
+    .search_border
+      margin: 10px
+      border: 1px solid #e4e4e4
+      border-radius: 22px
+      padding: 5px 10px
+      height: 44px
+      width: 580px
+      display: flex
+      align-items: center
+
+    .search_text
+      border: none
+      width: 100%
+      margin: 0 5px
+      font-size: 16px
+      padding: 5px 10px
+
+    .search_text:hover
+      outline: none
+
+    .search_text:focus
+      outline: none
+
+  .search_border:hover
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3)
+
+  .main_buttons
+    @extend .flex_center
+
+    .button_search
+      padding: 10px 25px
+      border: 1px solid #f2f2f2
+      background-color: #f2f2f2
+      margin: 11px 6px
+      font-size: 14px
+      border-radius: 3px
+
+    .button_search:hover
+      border: 1px solid rgba(0,0,0,.2)
+      cursor: pointer
+
+  .main_links
+    @extend .flex_center
+    font-size: 13px
+    display: flex
+    align-items: center
+    margin-top: 10px
+
+    .link_language
+      margin: 5px
+      text-decoration: none
 
 .footer
   display: flex
@@ -61,7 +121,7 @@ li
   line-height: 40px
   padding: 0 15px
 
-  li
+  .footer_link
     padding: 0 12.5px
 
   .footer_top
@@ -74,8 +134,5 @@ li
     justify-content: space-between
     border-top: 1px solid #e4e4e4
 
-    .footer_left ul
-      display: flex
-
-    .footer_right ul
+    .footer_list
       display: flex

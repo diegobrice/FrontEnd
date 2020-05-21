@@ -3,60 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Google by @diegobrice</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header class="header">
       <nav>
-        <ul>
-          <li>Gmail</li>
-          <li>Imágenes</li>
-          <li><a href="" class="menu"></a></li>
-          <li><a href="" class="user"></a></li>
+        <ul class="nav_items">
+          <li class="nav_link">Gmail</li>
+          <li class="nav_link">Imágenes</li>
+          <li class="nav_link"><a href="" class="menu"></a></li>
+          <li class="nav_link"><a href="" class="user"></a></li>
         </ul>
       </nav>
     </header>
     <section class="main">
-      <div class="contenedor">
+      <div class="main_container">
         <img src="./google_logo.png" alt="" />
-        <form action="">
-          <input type="text" name="" id="" />
-          <button>Buscar con Google</button>
-          <button>Me siento con suerte</button>
-          <p>Ofrecido por Google en:</p>
-          <a href="">
-            English
-          </a>
-          <a href="">
-            Español (Latinoamérica)
-          </a>
-          <a href="">
-            Quechua
-          </a>
+        <form action="" class="main_input">
+          <div class="search_border">
+            <img src="./lupa.png" alt="" class="lupa" />
+            <input type="text" name="" id="" class="search_text" />
+            <img src="./micro.png" alt="" class="micro" />
+          </div>
+          <div class="main_buttons">
+            <button class="button_search">Buscar con Google</button>
+            <button class="button_search">Me siento con suerte</button>
+          </div>
+          <div class="main_links">
+            <p>Ofrecido por Google en:</p>
+            <a href="" class="link_language">
+              English
+            </a>
+            <a href="" class="link_language">
+              Español (Latinoamérica)
+            </a>
+            <a href="" class="link_language">
+              Quechua
+            </a>
+          </div>
         </form>
       </div>
     </section>
     <footer class="footer">
       <div class="footer_top">
         <ul>
-          <li>Perú</li>
+          <li class="footer_link">Perú</li>
         </ul>
       </div>
       <div class="footer_bottom">
         <div class="footer_left">
-          <ul>
-            <li>Publicidad</li>
-            <li>Negocios</li>
-            <li>Sobre Google</li>
-            <li>Cómo funciona la Búsqueda</li>
+          <ul class="footer_list">
+            <li class="footer_link">Publicidad</li>
+            <li class="footer_link">Negocios</li>
+            <li class="footer_link">Sobre Google</li>
+            <li class="footer_link">Cómo funciona la Búsqueda</li>
           </ul>
         </div>
         <div class="footer_right">
-          <ul>
-            <li>Privacidad</li>
-            <li>Condiciones</li>
-            <li>Preferencias</li>
+          <ul cass="footer_list">
+            <li class="footer_link">Privacidad</li>
+            <li class="footer_link">Condiciones</li>
+            <li class="footer_link">Preferencias</li>
           </ul>
         </div>
       </div>
