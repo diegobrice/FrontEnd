@@ -116,7 +116,7 @@ ul:hover {
   margin: 5px 0;
 }
 
-.login__container--socialmedia > div {
+.login__container--socialmedia>div {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -233,6 +233,7 @@ ul:hover {
   .footer {
     flex-direction: column;
     height: auto;
+
   }
 
   .footer a {
@@ -240,5 +241,3 @@ ul:hover {
     margin-top: 0;
   }
 }
-
-/*# sourceMappingURL=estilo_session.css.map */
