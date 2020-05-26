@@ -1,0 +1,115 @@
+$blue : #664efc
+$link-blue:#a788fa
+$red : #e9446c
+$bg-gris : #ededf5
+$plomo : #27173e
+$mostaza: #f5b333
+$verde: #68cd72
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'Poppins', sans-serif
+  color: $plomo
+  background: $bg-gris
+
+.container
+  max-width: 450px
+  margin: 0 auto
+
+.header
+  background: $blue
+  height: 60px
+  text-align: center
+  position: sticky
+  top: 0
+
+  .header-title
+    color: white
+    font-size: 20px
+    line-height: 60px
+
+.card-area
+  background: $blue
+  height: 100px
+  margin-bottom: 125px
+
+  .card
+    background: white
+    height: 200px
+    margin: 0 20px
+    border-radius: 15px
+    padding: 20px
+    box-shadow: 0px 0px 3px #e1e1e3
+
+  .card-label
+    font-size: 20px
+
+  .card-mount
+    font-size: 30px
+
+  .card-details
+    margin: 20px 0
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    place-items: center center
+
+  .card-four
+    background: red
+    width: 55px
+    height: 55px
+    border-radius: 10px
+
+  .red
+    background: $red
+
+  .mostaza
+    background: $mostaza
+
+  .verde
+    background: $verde
+
+  .blue
+    background: $blue
+
+.mov
+  // background: $verde
+  width: 100%
+  display: flex
+  flex: 1
+  padding: 0 20px
+  margin-bottom: 20px
+
+  .card-two
+    width: 100%
+    max-width: 250px
+    height: 90px
+    background: white
+    border-radius: 15px
+    box-shadow: 0px 0px 3px #e1e1e3
+
+  .margin
+    margin-right: 20px
+
+.card-one
+  width: 100%
+  height: 90px
+  background: white
+  border-radius: 15px
+  box-shadow: 0px 0px 3px #e1e1e3
+
+.footer
+  background: white
+  position: sticky
+  width: 100%
+  bottom: 0
+  height: 60px
+  text-align: center
+  font-size: 12px
+  display: flex
+
+  .footer-item
+    width: 20%

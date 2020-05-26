@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #27173e;
+  background: #ededf5;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #664efc;
+  height: 60px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+.header .header-title {
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.card-area {
+  background: #664efc;
+  height: 100px;
+  margin-bottom: 125px;
+}
+.card-area .card {
+  background: white;
+  height: 200px;
+  margin: 0 20px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 3px #e1e1e3;
+}
+.card-area .card-label {
+  font-size: 20px;
+}
+.card-area .card-mount {
+  font-size: 30px;
+}
+.card-area .card-details {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center center;
+}
+.card-area .card-four {
+  background: red;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+}
+.card-area .red {
+  background: #e9446c;
+}
+.card-area .mostaza {
+  background: #f5b333;
+}
+.card-area .verde {
+  background: #68cd72;
+}
+.card-area .blue {
+  background: #664efc;
+}
+
+.mov {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.mov .card-two {
+  width: 100%;
+  max-width: 250px;
+  height: 90px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px #e1e1e3;
+}
+.mov .margin {
+  margin-right: 20px;
+}
+
+.card-one {
+  width: 100%;
+  height: 90px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px #e1e1e3;
+}
+
+.footer {
+  background: white;
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+}
+.footer .footer-item {
+  width: 20%;
+}
+
+/*# sourceMappingURL=style.css.map */

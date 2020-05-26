@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+  box-sizing: border-box;
+
+}
+
+.carousel-inner {
+  /* height: 400px; */
+  background: #cac8c8;
+  margin: 150px 0;
+}
+
+.carousel-item {
+  height: inherit;
+  padding: 0 8%;
+}
+
+.contenedor {
+  height: inherit;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.comment {
+  max-width: 270px;
+  padding: 50px 30px;
+}
+
+.comment .user-img {
+  margin: 10px auto;
+  height: 100px;
+  display: block;
+  border-radius: 50%;
+}
+
+.comment .user-name {
+  font-size: 16px;
+}
+
+.comment .user-nick {
+  font-size: 14px;
+  color: #237acc
+}
+
+.comment .user-comment {
+  font-size: 14px;
+  color: #4e4c4c;
+}
+
+@media only screen and (max-width: 700px) {
+  .carousel-item {
+    padding: 0 10%;
+  }
+
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .comment {
+    max-width: 90%;
+    padding: 0;
+  }
+
+  .comment .user-img {
+    display: inline-block;
+    height: 50px;
+  }
+}

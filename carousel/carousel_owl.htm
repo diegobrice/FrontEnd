@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <!-- Set up your HTML -->
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        Your Content 1
+      </div>
+      <div class="item">
+        Your Content 2
+      </div>
+      <div class="item">
+        Your Content 3
+      </div>
+      <div class="item">
+        Your Content 4
+      </div>
+      <div class="item">
+        Your Content 1
+      </div>
+      <div class="item">
+        Your Content 2
+      </div>
+      <div class="item">
+        Your Content 3
+      </div>
+      <div class="item">
+        Your Content 4
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        // animateIn: "animate__flipInX",
+        animateIn: "animate__bounceInDown",
+        // animateOut: "animate__zoomOut",
+        // animateOut: "animate__slideInUp",
+        items: 1,
+        margin: 300,
+        stagePadding: 300,
+        smartSpeed: 450,
+      });
+    </script>
+  </body>
+</html>
