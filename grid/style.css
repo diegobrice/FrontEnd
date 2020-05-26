@@ -1,0 +1,30 @@
+body {
+  background-color: #00b894;
+  color: #2d3436;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 100px; */
+  grid-template: 100px 220px 100px 100px / 320px 1fr 1fr;
+  text-align: center;
+  gap: 20px 30px;
+  margin: 20px;
+}
+
+.item {
+  padding: 10px;
+  border: 1px solid #2d3436;
+}
+
+.item:nth-of-type(4) {
+  background: skyblue;
+  overflow: auto;
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(3, 100px);
+  text-align: center;
+}
