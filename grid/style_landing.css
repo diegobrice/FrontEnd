@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+}
+
+.hero {
+  background: #218c74;
+  color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: minmax(auto, 900px);
+  justify-content: center;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 150px 1fr 320px;
+  grid-template-areas:
+    "badge titulo form"
+    "badge description form"
+    ". countdown form";
+  grid-gap: 10px;
+}
+
+.badge {
+  text-align: center;
+  grid-area: badge;
+}
+
+.badge img {
+  width: 100%;
+}
+
+.titulo {
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  grid-area: titulo;
+}
+
+.description {
+  grid-area: description;
+}
+
+.form {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1.5em;
+  border-radius: 10px;
+  margin: 10px 0;
+  grid-area: form;
+}
+
+
+.form .text {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbe2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.form p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form .btn {
+  background: #98ca3f;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  border-bottom: 5px solid #6d932b;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.countdown {
+  grid-area: countdown;
+}
+
+.countdown p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.countdown span {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.countdown span:after {
+  content: ":";
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.countdown span:last-child::after {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .hero-container {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas:
+      "badge titulo"
+      "badge description"
+      "countdown countdown"
+      "form form";
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .badge img {
+    width: 150px;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "badge"
+      "titulo"
+      "description"
+      "form"
+      "countdown";
+    grid-gap: 10px;
+  }
+}

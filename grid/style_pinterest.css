@@ -2,14 +2,14 @@ body {
   margin: 0;
   padding: 0;
   background: white;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-rows: 150px;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 10px;
   margin: 10px;
 }
@@ -17,7 +17,6 @@ body {
 .item {
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.1s;
 }
 
 
@@ -25,11 +24,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-}
-
-.item:hover {
-  transform: rotate(0deg);
 }
 
 .level1 {
@@ -45,7 +39,7 @@ body {
 }
 
 .level4 {
-  grid-row-end: span 2;
+  grid-row-end: span 4;
 }
 
 @media screen and (max-width:800px) {
